@@ -1,6 +1,8 @@
-# PingUI
+# <img src="./readme-imgs/pinguin_1.png"> PingUI
 
-<img src="./readme-imgs/pingui_image.jpg" width=300>
+**PingUI** is a GUI (Graphical User Interface), made for the visualization but also managing of log data collected by a program called pictl.</br>
+
+Development will start on the _1st of July, 2024_.
 
 ## Current State
 
@@ -15,28 +17,36 @@ pictl would then show all the logs in its standard output at once (and also writ
 </br></br>
 As one can imagine, this way too much output to effectively analyze at a glance.</br>
 
-### Watered down to max 400 characters
+### Watered down to max 400 characters (English)
 
 The company SecureGuard currently tests access points, which they develop.
 For this matter they have five towers filled with 8 pi nodes each and they created a tool called Pictl.
 Pictl manages the pi nodes and is able to make them execute scripts.
 The results, which are the logs of the specific scripts, are all shown in raw format and all at once.
 
+### German
+
+Das Unternehmen SecureGuard testet derzeit Accesspoints, die sie selbst entwickeln.
+
+Zu diesem Zweck haben sie fünf Türme mit jeweils 8 Pi-Nodes aufgebaut und ein Tool namens Pictl entwickelt. Pictl verwaltet die Pi-Nodes und kann sie dazu bringen Skripte auszuführen.
+
+Die Ergebnisse, d.h. die Logs der einzelnen Skripte, werden alle im Rohformat und auf einmal angezeigt.
+
 <img style="height: 450px; width: auto;" src="./readme-imgs/raspirack.png" alt="Raspberry Pi Rack">
 
 ## Investigation Concern of the individual topics
 
+### English Version
+
 #### Yannik Lisa
 
-1. Check if the analysis of saved data into a diagram is useful and how to implement it.
+1. Research which real time database is easy to work with
 
-2. Research which real time database is easy to work with
+2. Examine which format is useful to deliver the data to the frontend.
 
-3. Examine which format is useful to deliver the data to the frontend.
+3. Research how the pictl-tool and the database should interact with each other
 
-4. Research how the pictl-tool and the database should interact with each other
-
-5. Analyse which algorithms are the most effective to parse a large amount of data in real time.
+4. Analyse which algorithms are the most effective to parse a large amount of data in real time.
 
 #### Mattias Wolfslehner
 
@@ -46,21 +56,50 @@ The results, which are the logs of the specific scripts, are all shown in raw fo
 
 3. Check the compatibility of the framework with diagram graphics
 
+### German Version
+
+#### Yannik Lisa
+
+1. Recherchieren, ob eine Echtzeitdatenbank geeignet für das Projekt ist.
+
+2. Untersuchen, welches Format sinnvoll ist, um die Daten an das Frontend zu liefern.
+
+3. Recherchieren, wie das pictl-tool und die Datenbank miteinander interagieren sollen
+
+4. Analysieren, welche Algorithmen am effektivsten sind, um eine große Datenmenge in Echtzeit zu parsen.
+
+#### Mattias Wolfslehner
+
+1. Untersuchen, wie ein benutzerfreundliches UI für die Anwendung aussehen sollte
+
+2. Evaluieren, welches Framework am besten für die Erstellung eines solchen Frontends geeignet ist.
+
+3. Prüfen der Kompatibilität des Frameworks mit Diagrammgrafiken
+
 ## Target-Situation
+
+### English Version
 
 A web **frontend** and **backend** is needed, that manages pictl script executions, parses the output and then displays the output in real time in different ways depending on what type of tests the script executes.
 </br></br>
 There are load tests (display current speed per node), stability tests (display connection status per node) and more specific tests, which just have to have their logs displayed in real time as they are executed.
 
+### German Version
+
+Es wird ein Web-Frontend und -Backend benötigt, das die Ausführung von Pictl-Skripten verwaltet, die Ausgabe analysiert und sie dann in Echtzeit auf unterschiedliche Weise anzeigt, je nachdem, welche Art von Tests das Skript ausführt.</br>
+Es gibt Lasttests, Stabilitätstests und spezifischere Tests, deren Protokolle (Logs) in Echtzeit angezeigt werden müssen, während sie ausgeführt werden.
+
 ## Planned result of the individual topics
+
+### English Version
 
 - No expected costs
 
 #### Yannik Lisa
 
-- Modelling of a database to store the pictl data
+- Interaction of app to pictl
 
-- Implemented API-Endpoints for easy managing of the stored data (GET, POST, DELETE, ...)
+- Modelling of a database to store the pictl data
 
 - Analysis of past script results for trends or anomalies **in diagram form**
 
@@ -70,9 +109,27 @@ There are load tests (display current speed per node), stability tests (display 
 
 - Implementation of the graphical depiction with data from the backend
 
+### German Version
+
+- Keine Kosten zu erwarten
+
+#### Yannik Lisa
+
+- Interaktion von App zu Pictl
+
+- Modellierung einer Datenbank zur Speicherung der pictl-Daten
+
+- Analyse vergangener Skriptergebnisse auf Trends oder Anomalien **in Diagrammform**
+
+#### Mattias Wolfslehner
+
+- Erstellung eines detaillierten Wireframes, erstellt mit Figma
+
+- Implementierung der grafischen Darstellung mit Daten aus dem Backend
+
 ## Milestones
 
-4 Weeks; 20 Tage mit je 9h; 180h --> 30h pro meilenstein
+4 Weeks; 20 Days with each 9h; 180h --> 30h per milestone
 
 1. Planing finished with a meaningful wireframe for the webapplication
 
